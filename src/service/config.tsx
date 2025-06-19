@@ -1,7 +1,9 @@
 import { Platform } from 'react-native';
 
 export const BASE_URL =
-  Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+  Platform.OS === 'android'
+    ? 'http://10.0.2.2:8000/api'
+    : 'http://localhost:8000/api';
 
 // USE NETWORK IP OR HOSTED URL
 // export const BASE_URL = 'http://192.168.1.100:8000';

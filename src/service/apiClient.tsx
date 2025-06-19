@@ -33,7 +33,7 @@ apiClient.interceptors.response.use(
       }
 
       try {
-        const { data } = await axios.post(`${BASE_URL}/user/refresh`, {
+        const { data } = await axios.post(`${BASE_URL}/api/user/refresh`, {
           refreshToken,
         });
 
